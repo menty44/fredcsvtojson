@@ -30,7 +30,7 @@ public class CountryService implements ICountryService {
 
         try {
 
-            String fileName = "src/main/resources/countries.csv";
+            String fileName = "countries.csv";
 
             fis = new FileInputStream(new File(fileName));
             CSVReader reader = new CSVReader(new InputStreamReader(fis));
