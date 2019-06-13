@@ -34,8 +34,9 @@ public class CdrService implements ICdrService {
             reader.readNext();
 
             while ((nextLine = reader.readNext()) != null) {
-                System.out.println("Name"  + nextLine[0]);
-                System.out.println("Age"  + Integer.valueOf(nextLine[1]));
+//            if ((nextLine = reader.readNext()) != null) {
+//                System.out.println("Name"  + nextLine[0]);
+//                System.out.println("Age"  + Integer.valueOf(nextLine[1]));
 
                 Cdr cdr = new Cdr(nextLine[0], Integer.valueOf(nextLine[1]), Integer.valueOf(nextLine[2]), Integer.valueOf(nextLine[3]), nextLine[4]);
                 cdrs.add(cdr);
