@@ -38,7 +38,8 @@ public class CountryService implements ICountryService {
             reader.readNext();
 
             while ((nextLine = reader.readNext()) != null) {
-
+                System.out.println("Name"  + nextLine[0]);
+                System.out.println("Age"  + Integer.valueOf(nextLine[1]));
                 Country newCountry = new Country(nextLine[0],
                         Integer.valueOf(nextLine[1]));
                 countries.add(newCountry);
