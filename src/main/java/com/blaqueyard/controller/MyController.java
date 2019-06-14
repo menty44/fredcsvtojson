@@ -26,7 +26,7 @@ public class MyController {
     }
 
     @RequestMapping("/cdr")
-    public List<Cdr> listCalldata() {
+    public List<Cdr> listCalldata() throws Exception {
         return cdrService.findAll();
     }
 }

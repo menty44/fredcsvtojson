@@ -2,15 +2,15 @@ package com.blaqueyard.model;
 
 public class Cdr {
     private String name;
-    private int Age;
-    private int Id_Number;
-    private int Phone_Number;
+    private String Age;
+    private String Id_Number;
+    private String Phone_Number;
     private String Kra_Pin;
 
     public Cdr() {
     }
 
-    public Cdr(String name, int age, int id_Number, int phone_Number, String kra_Pin) {
+    public Cdr(String name, String age, String id_Number, String phone_Number, String kra_Pin) {
         this.name = name;
         Age = age;
         Id_Number = id_Number;
@@ -19,39 +19,40 @@ public class Cdr {
     }
 
     public String getName() {
-        return name;
+        return "\""+name+"\"";
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public int getAge() {
-        return Age;
+    public String getAge() {
+        return "\""+Age+"\"";
     }
 
-    public void setAge(int age) {
+    public void setAge(String age) {
         Age = age;
     }
 
-    public int getId_Number() {
-        return Id_Number;
+    public String getId_Number() {
+        return "\""+Id_Number+"\"";
     }
 
-    public void setId_Number(int id_Number) {
+    public void setId_Number(String id_Number) {
         Id_Number = id_Number;
     }
 
-    public int getPhone_Number() {
-        return Phone_Number;
+    public String getPhone_Number() {
+        return "\""+Phone_Number+"\"";
+
     }
 
-    public void setPhone_Number(int phone_Number) {
+    public void setPhone_Number(String phone_Number) {
         Phone_Number = phone_Number;
     }
 
     public String getKra_Pin() {
-        return Kra_Pin;
+        return "\""+Kra_Pin+"\"";
     }
 
     public void setKra_Pin(String kra_Pin) {
